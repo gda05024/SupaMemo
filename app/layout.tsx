@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { Metadata } from 'next'
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,17 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "yeni-note",
-  description: "supabase for note",
+  title: '웹사이트 제목',
+  description: '웹사이트 설명',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

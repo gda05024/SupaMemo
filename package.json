@@ -10,6 +10,7 @@
     "generate-types": "npx supabase gen types typescript --project-id iksnuzdjurzxddskekoc --schema public > types_db.ts"
   },
   "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.10.0",
     "@supabase/supabase-js": "^2.49.1",
     "next": "15.2.0",
     "react": "^19.0.0",

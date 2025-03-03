@@ -1,9 +1,14 @@
 'use client'
 
-import UI from "./ui";
+import Login from './components/Login'
+import UI from './ui'
+import { useGithubAuth } from './hook/useGithubAuth'
 
 export default function Home() {
+  const { isLoggedIn, loading } = useGithubAuth()
   return (
-    <UI />
-  );
+    <>
+      {loading ? <div>Loading...</div> : isLoggedIn ? <UI /> : <Login />}
+    </>
+  )
 }
