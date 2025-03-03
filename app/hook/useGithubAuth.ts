@@ -33,6 +33,8 @@ export function useGithubAuth() {
           redirectTo: `${window.location.origin}`
         }
       })
+
+      console.log('window.location.origin', window.location.origin)
       if (error) throw error
     } catch (error) {
       console.error('GitHub 로그인 에러:', error)

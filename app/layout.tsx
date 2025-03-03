@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: '웹사이트 제목',
-  description: '웹사이트 설명',
+  title: 'supa memo',
+  description: 'supa memo',
 };
 
 export default function RootLayout({
